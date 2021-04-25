@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kvm.ConsoleApp", "Kvm.ConsoleApp\Kvm.ConsoleApp.csproj", "{C3168861-6D8E-403E-8268-3027541CA8B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kvm.Analyser", "Kvm.Analyser\Kvm.Analyser.csproj", "{C649A56D-B845-46BD-B5DF-D5F127ED6357}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kvm.Log", "Kvm.Log\Kvm.Log.csproj", "{C0B3246F-4377-4F4A-99C7-992AF5C06F67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3168861-6D8E-403E-8268-3027541CA8B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3168861-6D8E-403E-8268-3027541CA8B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3168861-6D8E-403E-8268-3027541CA8B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3168861-6D8E-403E-8268-3027541CA8B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C649A56D-B845-46BD-B5DF-D5F127ED6357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C649A56D-B845-46BD-B5DF-D5F127ED6357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C649A56D-B845-46BD-B5DF-D5F127ED6357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C649A56D-B845-46BD-B5DF-D5F127ED6357}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0B3246F-4377-4F4A-99C7-992AF5C06F67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0B3246F-4377-4F4A-99C7-992AF5C06F67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0B3246F-4377-4F4A-99C7-992AF5C06F67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0B3246F-4377-4F4A-99C7-992AF5C06F67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
