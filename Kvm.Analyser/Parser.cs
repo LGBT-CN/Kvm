@@ -33,7 +33,7 @@ namespace Kvm.Analyser
                     continue;
                 }
 
-                dic.Add(m[..index], m[(index + 1)..]);
+                dic.Add(m[..index].Trim(), m[(index + 1)..].Trim());
             }
 
             return dic;
