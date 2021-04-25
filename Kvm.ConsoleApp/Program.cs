@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text.Json;
 using Kvm.Analyser;
 
 namespace Kvm.ConsoleApp
@@ -9,35 +10,30 @@ namespace Kvm.ConsoleApp
     {
         static void Main(string[] args)
         {
-            List<ParseItemModel> list = new();
+            var list = JsonSerializer.Deserialize<List<ParseItemModel>>(
+                File.ReadAllText(
+                    string.IsNullOrWhiteSpace(args[0]) 
+                        ? "config.json"
+                        : args[0]
+                    )
+                );
 
-            list.AddRange(new[]
+            if (list == null)
             {
-                new ParseItemModel()
-                {
-                    ModelPath= "in/model/index.kvm",
-                    PropPath = "in/data/zh.txt",
-                    OutPath = "out/index_zhcn.html"
-                },
-                new ParseItemModel()
-                {
-                    ModelPath= "in/model/index.kvm",
-                    PropPath = "in/data/tw.txt",
-                    OutPath = "out/index_zhtw.html"
-                },
-                new ParseItemModel()
-                {
-                    ModelPath= "in/model/index.kvm",
-                    PropPath = "in/data/en.txt",
-                    OutPath = "out/index_engb.html"
-                }
-            });
-
+                Shared.Log.E("Cannot deserialise config!");
+                return;
+            }
             foreach (var i in list)
             {
-                i.Parse();
+                try
+                {
+                    i.Parse();
+                }
+                catch (Exception ex)
+                {
+                    Shared.Log.E($"Cannot parse {i.OutPath}\n{ex.Message}");
+                }
             }
-
         }
     }
 }
