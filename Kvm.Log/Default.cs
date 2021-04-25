@@ -23,5 +23,12 @@ namespace Kvm.Log
             Console.Error.WriteLine($"[E {DateTime.Now.ToLocalTime().ToString()}] {msg}");
             Console.ResetColor();
         }
+        
+        public void S(string msg)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Error.WriteLine($"[S {DateTime.Now.ToLocalTime().ToString()}] {msg}");
+            Console.ResetColor();
+        }
     }
 }

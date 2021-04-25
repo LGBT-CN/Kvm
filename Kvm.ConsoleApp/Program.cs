@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Kvm.Analyser;
 
 namespace Kvm.ConsoleApp
@@ -7,22 +8,11 @@ namespace Kvm.ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            string x = @"mmm
-KKK=auhsbcj
-A=CBA
-D=";
-            var d = Parser.SplitByFirstLine(x);
-            Console.WriteLine("=====1=======");
-            Console.WriteLine(d.Item1);
-            Console.WriteLine("=====2=======");
-            Console.WriteLine(d.Item2);
-            Console.WriteLine("=====3=======");
-            var dix = Parser.ParseKey(x);
-            foreach (var kv in dix)
-            {
-                Console.WriteLine($"K->{kv.Key} && V->{kv.Value}");
-            }
+            var model = File.ReadAllText("in\\model\\index.kvm");
+            var prop = File.ReadAllText("in\\data\\zh.txt");
+            var m = Parser.Parse(model, prop);
+            File.WriteAllText("zh.html", m);
+
         }
     }
 }

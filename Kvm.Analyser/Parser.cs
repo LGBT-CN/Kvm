@@ -36,6 +36,8 @@ namespace Kvm.Analyser
                 dic.Add(m[..index].Trim(), m[(index + 1)..].Trim());
             }
 
+            Shared.Log.S("Parse prop successfully!");
+
             return dic;
         }
 
@@ -60,20 +62,12 @@ namespace Kvm.Analyser
             var m = Lexer.Parse(kvm);
             foreach (var i in m)
             {
-                switch (i.Type)
+                sb.Append(i.Type switch
                 {
-                    case TokenType.Unknown:
-                    case TokenType.Block:
-                        sb.Append(i.Data);
-                        break;
-                    case TokenType.Control:
-                        lock (prop)
-                        {
-                            sb.Append(((ControlToken) i).Parse(prop));
-                        }
-
-                        break;
-                }
+                    TokenType.Unknown or TokenType.Block => i.Data,
+                    TokenType.Control => ((ControlToken) i).Parse(prop),
+                    _ => ""
+                });
             }
 
             return sb.ToString();
