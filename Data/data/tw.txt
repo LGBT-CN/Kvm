@@ -19,5 +19,5 @@ ReasonNeedEquality=LGBTQIA 是少數群體，儘管 LGBTQIA也是普通人，但
 HowToRespect=如何尊重 LGBTQIA 群體？
 WaysToRespect=就像你尊重你身邊的任何一個朋友一樣，把 LGBTQIA 們當做普通人。記住 LGBTQIA 不是任何形式上的一種疾病，哪怕你們有生理上的差異，LGBTQIA 也是正常人。 同時，LGBTQIA 確實也需要比異性戀更多的關懷，因為 LGBTQIA 常常缺乏安全感，並且渴望被認同。
 WaysToSupport=如果你支持 LGBTQIA 平權，歡迎在本項目 <a href="https://github.com/LGBT-CN/LGBTQIA-in-China/">GitHub 倉庫</a> 中的 <a href="https://github.com/LGBT-CN/LGBTQIA-in-China/blob/master/README.md">README.md</a> 中留下你的名字，並點一個 Star 作為支持！同時，你也可以寫一篇關於中國 LGBTQIA 群體的文章，將原文地址和 Markdown 文件（作為備份）提供給我們，只要文章內容與 LGBTQIA 相關，或是 LGBTQIA 中的任意一個群體相關，呼籲平權，我們都會通過。所有支持者的名字和他們提供的文章都可以在 <a href="https://github.com/LGBT-CN/LGBTQIA-in-China/blob/master/README.md">README.md</a> 文件中看到。
-PRTip儘量以 Pull Requests 的方式提交 Commit（文章請提交在 post 目錄下）
+PRTip=儘量以 Pull Requests 的方式提交 Commit（文章請提交在 post 目錄下）
 FooterSaying=Love is love. We're the same.<br>在愛面前我們都一樣。
