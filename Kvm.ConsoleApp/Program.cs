@@ -12,17 +12,20 @@ namespace Kvm.ConsoleApp
         {
             var list = JsonSerializer.Deserialize<List<ParseItemModel>>(
                 File.ReadAllText(
-                    string.IsNullOrWhiteSpace(args[0]) 
-                        ? "config.json"
-                        : args[0]
-                    )
-                );
+                    args.Length > 0
+                        ? string.IsNullOrWhiteSpace(args[0])
+                            ? "config.json"
+                            : args[0]
+                        : "config.json"
+                )
+            );
 
             if (list == null)
             {
                 Shared.Log.E("Cannot deserialise config!");
                 return;
             }
+
             foreach (var i in list)
             {
                 try
