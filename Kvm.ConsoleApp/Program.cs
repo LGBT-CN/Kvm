@@ -15,21 +15,21 @@ namespace Kvm.ConsoleApp
             {
                 new ParseItemModel()
                 {
-                    ModelPath= "in\\model\\index.kvm",
-                    PropPath = "in\\data\\zh.txt",
-                    OutPath = "out\\index_zhcn.html"
+                    ModelPath= "in/model/index.kvm",
+                    PropPath = "in/data/zh.txt",
+                    OutPath = "out/index_zhcn.html"
                 },
                 new ParseItemModel()
                 {
-                    ModelPath= "in\\model\\index.kvm",
-                    PropPath = "in\\data\\tw.txt",
-                    OutPath = "out\\index_zhtw.html"
+                    ModelPath= "in/model/index.kvm",
+                    PropPath = "in/data/tw.txt",
+                    OutPath = "out/index_zhtw.html"
                 },
                 new ParseItemModel()
                 {
-                    ModelPath= "in\\model\\index.kvm",
-                    PropPath = "in\\data\\en.txt",
-                    OutPath = "out\\index_engb.html"
+                    ModelPath= "in/model/index.kvm",
+                    PropPath = "in/data/en.txt",
+                    OutPath = "out/index_engb.html"
                 }
             });
 
