@@ -11,10 +11,12 @@ namespace Kvm.ConsoleApp
 
         public void Parse()
         {
+            Shared.Log.I($"Start to parse {ModelPath} with {PropPath} to {OutPath}");
             var model = File.ReadAllText(ModelPath);
             var prop = File.ReadAllText(PropPath);
             var m = Parser.Parse(model, prop);
             File.WriteAllText(OutPath, m);
+            Shared.Log.S($"Parse {OutPath} finished!");
         }
     }
 }
