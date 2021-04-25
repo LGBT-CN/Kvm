@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using Kvm.Analyser;
 
@@ -8,10 +9,34 @@ namespace Kvm.ConsoleApp
     {
         static void Main(string[] args)
         {
-            var model = File.ReadAllText("in\\model\\index.kvm");
-            var prop = File.ReadAllText("in\\data\\zh.txt");
-            var m = Parser.Parse(model, prop);
-            File.WriteAllText("zh.html", m);
+            List<ParseItemModel> list = new();
+
+            list.AddRange(new[]
+            {
+                new ParseItemModel()
+                {
+                    ModelPath= "in\\model\\index.kvm",
+                    PropPath = "in\\data\\zh.txt",
+                    OutPath = "out\\index_zhcn.html"
+                },
+                new ParseItemModel()
+                {
+                    ModelPath= "in\\model\\index.kvm",
+                    PropPath = "in\\data\\tw.txt",
+                    OutPath = "out\\index_zhtw.html"
+                },
+                new ParseItemModel()
+                {
+                    ModelPath= "in\\model\\index.kvm",
+                    PropPath = "in\\data\\en.txt",
+                    OutPath = "out\\index_engb.html"
+                }
+            });
+
+            foreach (var i in list)
+            {
+                i.Parse();
+            }
 
         }
     }
