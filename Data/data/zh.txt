@@ -1,3 +1,4 @@
+lang=zh-cn
 Description=中国的 LGBTQIA 群体十分渴望自由平等
 About=关于
 Support=支持
@@ -19,3 +20,4 @@ HowToRespect=如何尊重 LGBTQIA 群体？
 WaysToRespect=就像你尊重你身边的任何一个朋友一样，把 LGBTQIA 们当做普通人。记住 LGBTQIA 不是任何形式上的一种疾病，哪怕你们有生理上的差异，LGBTQIA 也是正常人。同时，LGBTQIA 确实也需要比异性恋更多的关怀，因为 LGBTQIA 常常缺乏安全感，并且渴望被认同。
 WaysToSupport=如果你支持 LGBTQIA 平权，欢迎在本项目 <a href="https://github.com/LGBT-CN/LGBTQIA-in-China/">GitHub 仓库</a> 中的 <a href="https://github.com/LGBT-CN/LGBTQIA-in-China/blob/master/README.md">README.md</a> 中留下你的名字，并点一个 Star 作为支持！同时，你也可以写一篇关于中国 LGBTQIA 群体的文章，将原文地址和 Markdown 文件（作为备份）提供给我们，只要文章内容与 LGBTQIA 相关，或是 LGBTQIA 中的任意一个群体相关，呼吁平权，我们都会通过。所有支持者的名字和他们提供的文章都可以在 <a href="https://github.com/LGBT-CN/LGBTQIA-in-China/blob/master/README.md">README.md</a> 文件中看到。
 PRTip=尽量以 Pull Requests 的方式提交 Commit（文章请提交在 post 目录下）
+FooterSaying=Love is love. We're the same.<br>在爱面前我们都一样。

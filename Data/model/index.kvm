@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-tw">
+<html lang="{%lang%}">
 
 <head>
     <meta charset="utf-8">
@@ -121,8 +121,7 @@
 					{%PRTip%}
 				</p>
                 <p id="sayings"><span style="color:red;font-size: 25px;">❤</span><br>
-                    Love is love. We're the same.<br>
-                    在愛面前我們都一樣。
+                    {%FooterSaying%}
                 </p>
                 <br>
             </div>
@@ -141,12 +140,10 @@
             window.addEventListener('scroll', function (e) {
                 last_scroll_position = window.scrollY;
 
-                // 向下滾動
                 if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
                     header.classList.remove("slideDown");
                     header.classList.add("slideUp");
 
-                    // 向上滾動
                 } else if (new_scroll_position > last_scroll_position) {
                     header.classList.remove("slideUp");
                     header.classList.add("slideDown");
