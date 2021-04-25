@@ -51,8 +51,8 @@
                     </div>
                     <blockquote>{%Slogan%}</blockquote>
                     <p>
-					    {%ProjectTarget%}
-					</p>
+                        {%ProjectTarget%}
+                    </p>
                     <div class="button-group">
                         <a href="https://github.com/LGBT-CN/LGBTQIA-in-China" class="button button-github button-margin-right-8px"><em 
                             class="iconfont icon-GitHub"></em> GitHub</a>
@@ -82,26 +82,26 @@
                         <div class="about-section col-md-6" id="about-1">
                             <h2>{%WhatsLGBTQIA%}</h2>
                             <p>
-							    {%LGBTQIADefinition%}
+                                {%LGBTQIADefinition%}
                             </p>
                         </div>
                         <div class="about-section col-md-6" id="about-2">
                             <h2>{%WhyCreate%}</h2>
                             <p>
-							    {%ReasonCreate%}
-							</p>
+                                {%ReasonCreate%}
+                            </p>
                         </div>
                         <div class="about-section col-md-6" id="about-3">
                             <h2>{%WhyNeedEquality%}</h2>
                             <p>
-							    {%ReasonNeedEquality%}
-							</p>
+                                {%ReasonNeedEquality%}
+                            </p>
                         </div>
                         <div class="about-section col-md-6" id="about-4">
                             <h2>{%HowToRespect%}</h2>
                             <p>
-							    {%WaysToRespect%}
-							</p>
+                                {%WaysToRespect%}
+                            </p>
                         </div>
                     </div>
                     <br><br>
@@ -110,16 +110,16 @@
             <!-- support -->
             <div class="section" id="support">
                 <h1>
-				    {%Support%}
-				</h1>
+                    {%Support%}
+                </h1>
                 <hr>
                 <p>
-				    {%WaysToSupport%}
-				</p>
+                    {%WaysToSupport%}
+                </p>
                 <p style="color: cadetblue">
-				    <em class="iconfont icon-fork"></em>
-					{%PRTip%}
-				</p>
+                    <em class="iconfont icon-fork"></em>
+                    {%PRTip%}
+                </p>
                 <p id="sayings"><span style="color:red;font-size: 25px;">❤</span><br>
                     {%FooterSaying%}
                 </p>
