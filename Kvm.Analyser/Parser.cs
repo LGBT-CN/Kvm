@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using Kvm.Analyser.Tokens;
 
@@ -38,11 +39,22 @@ namespace Kvm.Analyser
             return dic;
         }
 
-        public string Parse(string kvm, string prop)
+        public static string Parse(string str)
+        {
+            var m = SplitByFirstLine(str);
+            if (string.IsNullOrWhiteSpace(m.Item2))
+                return Parse(str, "");
+            if (!m.Item1.StartsWith("#using"))
+                return Parse(str, "");
+            var i = File.ReadAllText(str[6..].Trim());
+            return Parse(m.Item2, i);
+        }
+
+        public static string Parse(string kvm, string prop)
             => Parse(kvm, ParseKey(prop));
 
 
-        public string Parse(string kvm, Dictionary<string, string> prop)
+        public static string Parse(string kvm, Dictionary<string, string> prop)
         {
             StringBuilder sb = new();
             var m = Lexer.Parse(kvm);
