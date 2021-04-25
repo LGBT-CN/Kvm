@@ -1,3 +1,9 @@
+#############################
+# DEFAULT LANGUAGE PROPERTY #
+# DATE: 26/04/2021          #
+# DON'T MODIFY EXCEPT NECE- #
+# SSARY!                    #
+#############################
 lang=
 Description=
 About=
