@@ -23,8 +23,8 @@ jobs:
       run: dotnet build --no-restore --configuration Release
     - name: Copy Data
       run: |
-        cp -rf Data/ Kvm.ConsoleApp/bin/Debug/net5.0/
-        mkdir Kvm.ConsoleApp/bin/Debug/net5.0/out
+        cp -rf Data/ Kvm.ConsoleApp/bin/Release/net5.0/
+        mkdir Kvm.ConsoleApp/bin/Release/net5.0/out
     - name: Compile Kvm
       run: |
         cd Kvm.ConsoleApp/bin/Debug/net5.0/
