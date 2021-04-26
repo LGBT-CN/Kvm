@@ -27,9 +27,9 @@ jobs:
         mkdir Kvm.ConsoleApp/bin/Release/net5.0/out
     - name: Compile Kvm
       run: |
-        cd Kvm.ConsoleApp/bin/Debug/net5.0/
+        cd Kvm.ConsoleApp/bin/Release/net5.0/
         dotnet ./Kvm.ConsoleApp.dll
     - name: Upload compiled files
       uses: actions/upload-artifact@v2.2.3
       with:
-        path: Kvm.ConsoleApp/bin/Debug/net5.0/out/*
+        path: Kvm.ConsoleApp/bin/Release/net5.0/out/*
