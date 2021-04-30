@@ -2,16 +2,16 @@
   {
     "ModelPath": "model/index.kvm",
     "PropPath": "data/zh.txt",
-    "OutPath": "out/index_zhcn.html"
+    "OutPath": "out/index.html"
   },
   {
     "ModelPath": "model/index.kvm",
     "PropPath": "data/tw.txt",
-    "OutPath": "out/index_zhtw.html"
+    "OutPath": "out/page/zh-TW.html"
   },
   {
     "ModelPath": "model/index.kvm",
     "PropPath": "data/en.txt",
-    "OutPath": "out/index_engb.html"
+    "OutPath": "out/page/en-GB.html"
   }
 ]
