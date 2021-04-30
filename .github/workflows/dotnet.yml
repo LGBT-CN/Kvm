@@ -24,7 +24,7 @@ jobs:
     - name: Copy Data
       run: |
         cp -rf Data/* Kvm.ConsoleApp/bin/Release/net5.0/
-        mkdir -r Kvm.ConsoleApp/bin/Release/net5.0/out/page
+        mkdir -p Kvm.ConsoleApp/bin/Release/net5.0/out/page
     - name: Compile Kvm
       run: |
         cd Kvm.ConsoleApp/bin/Release/net5.0/
